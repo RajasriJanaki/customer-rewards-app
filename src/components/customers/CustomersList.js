@@ -3,7 +3,7 @@ import React from 'react';
 const CustomersList = ({ customers }) => {
 
     return (
-        <>
+        <tbody>
             {customers ? customers.map((customer) => {
                 return (
                     <tr key={customer.customerId}>
@@ -14,7 +14,7 @@ const CustomersList = ({ customers }) => {
                     </tr>
                 )
             }): null}
-        </>
+        </tbody>
     )
 }
 

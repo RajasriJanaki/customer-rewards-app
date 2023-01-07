@@ -1,21 +1,22 @@
 import React from 'react';
+import { findRewards } from '../../Utilities/Rewards';
 
 const TransactionsList = ({ transactions }) => {
 
     return (
-        <>
+        <tbody>
             {transactions ? transactions.map((transaction) => {
                 return (
-                    <tr key={transaction.transactionId}>
+                    <tr key={transaction.id}>
                         <td>{transaction.transactionId}</td>
-                        <td>{transaction.dateTime}</td>
+                        <td>{transaction.datetime.replace('T', ' ').replace('Z', ' ').split('.')[0]}</td>
+                        <td>{transaction.customerId}</td>
                         <td>{transaction.amount}</td>
-                        <td>{((transaction.amount > 100) ? (transaction.amount - 100)*2 : 0) 
-                            + ((transaction.amount > 50) ? 50 : 0)}</td>
+                        <td>{findRewards(transaction.amount)}</td>
                     </tr>
                 )
             }): null}
-        </>
+        </tbody>
     )
 }
 
