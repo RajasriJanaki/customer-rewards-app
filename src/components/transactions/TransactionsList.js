@@ -1,5 +1,5 @@
 import React from 'react';
-import { findRewards } from '../../utilities/Rewards';
+import { findRewards } from '../../utilities/rewards';
 
 const TransactionsList = ({ transactions }) => {
 

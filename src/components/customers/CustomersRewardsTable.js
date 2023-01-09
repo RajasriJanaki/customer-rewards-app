@@ -1,9 +1,9 @@
 import React from "react";
 import TableHeader from "../generic/TableHeader";
 import CustomersRewardList from "./CustomersRewardList";
-import { getTransactions, filterTransactions } from "../../utilities/Data"
+import { getTransactions, filterTransactions } from "../../utilities/data"
 import { useState,useEffect } from "react";
-import {reducedMonths, months } from "../../config/DateConfig"
+import {reducedMonths, months } from "../../config/dateConfig"
 
 export function CustomersRewardsTable() {
     const columns = ["Customer ID", "Monthly Rewards", "Total Rewards"];

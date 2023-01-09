@@ -1,6 +1,6 @@
-import { reducedMonths } from "../config/DateConfig";
-import { findRewards } from "./Rewards";
-import { API_URL_BASE } from "../config/ApiConfig";
+import { reducedMonths } from "../config/dateConfig";
+import { findRewards } from "./rewards";
+import { API_URL_BASE } from "../config/apiConfig";
 /**
  * @returns Transactions all time
  */

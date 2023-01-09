@@ -4,7 +4,7 @@ export default function TableHeader(props) {
     return (
         <thead>
             <tr>
-                {props.columns ? props.columns.map(column => <th>{column}</th>) : null}
+                {props.columns ? props.columns.map(column => <th key={column}>{column}</th>) : null}
             </tr>
         </thead>
     );
