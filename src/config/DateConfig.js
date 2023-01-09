@@ -1,3 +1,6 @@
+/**
+ * @returns 3 recent months based on current date.
+ */
 function getReducedMonths() {
     let month = [];
   
