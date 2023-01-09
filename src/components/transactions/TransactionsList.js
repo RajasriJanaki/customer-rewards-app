@@ -1,5 +1,5 @@
 import React from 'react';
-import { findRewards } from '../../Utilities/Rewards';
+import { findRewards } from '../../utilities/Rewards';
 
 const TransactionsList = ({ transactions }) => {
 
@@ -9,7 +9,7 @@ const TransactionsList = ({ transactions }) => {
                 return (
                     <tr key={transaction.id}>
                         <td>{transaction.transactionId}</td>
-                        <td>{transaction.datetime.replace('T', ' ').replace('Z', ' ').split('.')[0]}</td>
+                        <td>{transaction.datetime}</td>
                         <td>{transaction.customerId}</td>
                         <td>{transaction.amount}</td>
                         <td>{findRewards(transaction.amount)}</td>

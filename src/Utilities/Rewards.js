@@ -8,5 +8,5 @@ export function findRewards(amount) {
     let points = (amount > 50) ? (amount - 50) : 0;
     points += (amount > 100) ? (amount - 100) : 0;
 
-    return points.toFixed(2);
+    return Math.round(points);
 }

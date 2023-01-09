@@ -1,7 +1,7 @@
 import React from "react";
 import TableHeader from "../generic/TableHeader";
 import TransactionsList from "./TransactionsList";
-import { getTransactions } from "../../Utilities/Data";
+import { getTransactions } from "../../utilities/Data";
 import { useState, useEffect } from "react";
 
 export function TransactionsTable() {

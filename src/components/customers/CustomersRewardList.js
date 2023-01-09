@@ -1,16 +1,15 @@
 import React from 'react';
 
-const CustomersList = ({ customers }) => {
+const CustomersRewardsList = ({ rewards }) => {
 
     return (
         <tbody>
-            {customers ? customers.map((customer) => {
+            {rewards ? rewards.map((customer) => {
                 return (
                     <tr key={customer.customerId}>
                         <td>{customer.customerId}</td>
-                        <td>{customer.name}</td>
-                        <td>{customer.points}</td>
-                        <td>{customer.amount}</td>
+                        <td>{customer.monthly}</td>
+                        <td>{customer.total}</td>
                     </tr>
                 )
             }): null}
@@ -18,4 +17,4 @@ const CustomersList = ({ customers }) => {
     )
 }
 
-export default CustomersList;
+export default CustomersRewardsList;
