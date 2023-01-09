@@ -11,6 +11,7 @@ Assumptions:
 for 3 months is done.
 2. Exactly 3 months are considered. Not the 90 days data from current date.
 3. Simulation can be done using mock api tool. Have used https://mockapi.io/clone/63b793e34d97e82aa3c070b7 with a suitable schema for the given requirement. Data is framed to cover assumption 1.
+4. Rewards points will be rounded off to the nearest integer after point calculation on decimal transaction amount.
 
 How to use or test this app?
 NOTE: Have stable internet connection since it has over the internet API calls.
