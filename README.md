@@ -1,3 +1,28 @@
+Requirements:
+
+A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
+ 
+A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every
+dollar spent between $50 and $100 in each transaction.
+(e.g., a $120 purchase = 2x$20 + 1x$50 = 90 points).
+
+Assumptions:
+1. Transactions can contain more than 3 months of past data. So necessary filtering of transaction data
+for 3 months is done.
+2. Exactly 3 months are considered. Not the 90 days data from current date.
+3. Simulation can be done using mock api tool. Have used https://mockapi.io/clone/63b793e34d97e82aa3c070b7 with a suitable schema for the given requirement. Data is framed to cover assumption 1.
+
+How to use or test this app?
+NOTE: Have stable internet connection since it has over the internet API calls.
+1. Fork and clone the repo.
+2. Run npm install.
+3. Run npm start to run the application
+4. Run npm run test to run test cases.
+
+Customer Rewards App:
+1. Has a home page (http://localhost:3000/) which by default loads all the transactions from the api.
+2. Navigate to "Rewards" page (http://localhost:3000/rewards): Lists all the customers and their monthly points (current month) and total points for the recent 3 months. Can filter the data using "month" dropdown.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
